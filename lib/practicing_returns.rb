@@ -6,8 +6,8 @@ def hello(array)
   collection << yield(array[i])
     i += 1
   end
+  collection
 end
 
 
-
-hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
+hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" } # I'm actually calling the above method with arguments
